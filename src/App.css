@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	color: rgb(50, 50, 51);
+}
+
+p {
+	font-size: 14px;
+}
+
+.container {
+	max-width: 900px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0px auto;
+	height: 100vh;
+}
+
+.btn-login {
+	text-align: center;
+	background-color: aqua;
+	padding: 10px 20px;
+	text-decoration: none;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+}
+
+.btn-login:hover {
+	background-color: rgb(107, 248, 248);
+}
+
+/* dashboard style */
+.dashboard-container {
+	max-width: 900px;
+	margin: 50px auto;
+}
+
+.task-header {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.task-header h5 {
+	color: brown;
+}
+
+.task-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 10px;
+	margin-top: 10px;
+	align-items: center;
+	justify-content: cnter;
+}
+
+.box {
+	border-radius: 15px;
+	padding: 10px;
+	max-width: 250px;
+	overflow: hidden;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.dashboard-header {
+	margin-bottom: 15px;
+	background-color: cadetblue;
+	padding: 10px 20px 10px 20px;
+}
+
+.btn-delete {
+	background-color: rgb(249, 84, 84);
+	color: rgb(250, 246, 246);
+	border: none;
+	border-radius: 3px;
+	padding: 2px 5px;
+	cursor: pointer;
+}
+
+.btn-delete:hover {
+	background-color: rgb(246, 124, 124);
+}
+
+.task-message {
+	color: rgb(46, 46, 1);
+}
+.btn-edit {
+	background-color: rgb(247, 247, 18);
+	color: rgb(63, 62, 62);
+	border: none;
+	border-radius: 3px;
+	padding: 2px 5px;
+	cursor: pointer;
+	margin-left: 5px;
+}
+
+.btn-edit:hover {
+	background-color: rgb(251, 251, 146);
+}
+
+.btn-view {
+	background-color: rgb(163, 163, 249);
+	color: rgb(63, 62, 62);
+	border: none;
+	border-radius: 3px;
+	padding: 2px 5px;
+	cursor: pointer;
+	margin-left: 5px;
+}
+
+.btn-view:hover {
+	background-color: rgb(130, 130, 252);
+}
+
+/* CreatePost style */
+
+.container-createPost {
+	max-width: 400px;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	margin: 100px auto;
+	text-align: center;
+	padding: 10px;
+	border-radius: 20px;
+	/* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; */
+	box-shadow: rgba(100, 100, 111, 0.6) 0px 7px 29px 0px;
+}
+
+.input-box {
+	padding: 5px;
+	border-radius: 5px;
+	border: 1px solid black;
+	margin-bottom: 5px;
+}
+
+label {
+	font-size: 14px;
+}
+
+.btn-submitTask {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 100%;
+	border: none;
+	padding: 5px 0px 5px 0px;
+	border-radius: 5px;
+	cursor: pointer;
+	background-color: rgb(116, 255, 255);
+	color: rgb(12, 11, 11);
+	font-size: 16px;
+	font-weight: 600;
+}
+.btn-submitTask:hover {
+	background-color: rgb(155, 249, 249);
+}
+
+.btn-goToDashboard {
+	width: 100%;
+	padding: 5px 0px 5px 0px;
+	border-radius: 5px;
+	border: 1px solid rgb(2, 125, 125);
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: 600;
+	background-color: transparent;
+}
+.btn-goToDashboard:hover {
+	background-color: rgb(116, 255, 255);
+	border: 1px solid rgb(116, 255, 255);
+}
+
+.validation {
+	color: red;
+	font-size: 14px;
+}
+
+@media screen and (max-width: 900px) {
+	.task-container {
+		grid-template-columns: 1fr;
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+	.dashboard-header {
+		text-align: center;
+		font-size: 25px;
+	}
+
+	.task-header {
+		display: flex;
+		justify-content: center;
+	}
+}
